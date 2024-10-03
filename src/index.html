@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div id="app"><h1>Hey</h1></div>
+    <div id="test"></div>
+    test<input id="input" />
+    <button onclick="multiplier()">check</button>
+  <div> result<input id = "result">
+    <script src="./index.mjs" type="module">
+       import { multiplier } from './index.mjs';
+        window.multiplier = multiplier;
+    </script>
+  </body>
+</html>
